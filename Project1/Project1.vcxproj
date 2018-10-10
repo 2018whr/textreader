@@ -11,10 +11,17 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="源4cpp.cpp" />
+    <ClCompile Include="file_io.cpp" />
+    <ClCompile Include="pugixml\pugixml.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Text.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="file_io.h" />
+    <ClInclude Include="ini_parser\ini.hpp" />
+    <ClInclude Include="pugixml\pugiconfig.hpp" />
+    <ClInclude Include="pugixml\pugixml.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C1F8E4DD-8E5B-4D77-8C09-96C74A8289B0}</ProjectGuid>

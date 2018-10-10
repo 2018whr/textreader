@@ -13,9 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="xmlparser">
+      <UniqueIdentifier>{1b1d4061-3a14-4a49-b8eb-ac75ca79355a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="源4cpp.cpp">
+    <ClCompile Include="pugixml\pugixml.cpp">
+      <Filter>xmlparser</Filter>
+    </ClCompile>
+    <ClCompile Include="file_io.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -23,5 +29,19 @@
     <Text Include="Text.txt">
       <Filter>源文件</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pugixml\pugiconfig.hpp">
+      <Filter>xmlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="pugixml\pugixml.hpp">
+      <Filter>xmlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="ini_parser\ini.hpp">
+      <Filter>xmlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="file_io.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
