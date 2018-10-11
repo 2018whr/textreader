@@ -17,60 +17,24 @@ int main()
 
 			if (idx1 != string::npos)
 			{
-				line = line.substr(5);//清除数据开头的字符“spid”
-				std::istringstream iss(line);
 				
-				while (!iss.eof())
-				{
-					string a;
-					iss >> a;
-					d.getspid.push_back(a);
-
-				}
+				d.f_setspid(5, line);
 			}
 			else if (idx2 != string::npos)
 			{
-				line = line.substr(2);//清除“sx”
-				std::istringstream iss(line);
-				while (!iss.eof())
-				{
-					string a;
-					iss >> a;
-					d.getsx.push_back(a);
-				}
+				d.f_setsx(2, line);
 			}
 			else if (idx3 != string::npos)
 			{
-				line = line.substr(2);
-				std::istringstream iss(line);
-				while (!iss.eof())
-				{
-					string a;
-					iss >> a;
-					d.getsy.push_back(a);
-				}
+				d.f_setsy(2, line);
 			}
 			else if (idx4 != string::npos)
 			{
-				line = line.substr(2);
-				std::istringstream iss(line);
-				while (!iss.eof())
-				{
-					string a;
-					iss >> a;
-					d.getsz.push_back(a);
-				}
+				d.f_setsz(2, line);
 			}
 			else
 			{
-				line = line.substr(3);
-				std::istringstream iss(line);
-				while (!iss.eof())
-				{
-					string a;
-					iss >> a;
-					d.getid.push_back(a);
-				}
+				d.f_setid(3, line);
 			}
 			//赋值给二维向量
 			d.setid.push_back(d.getid);

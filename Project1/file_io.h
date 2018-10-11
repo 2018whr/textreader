@@ -4,26 +4,101 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
-#include<string>
-#include<sstream>
+#include <sstream>
 using namespace std;
 class Data
 {
 public:
 	//最终储存的位置 二维向量
-	std::vector<std::vector<string>> setid;
-	std::vector<std::vector<string>> setspid;
-	std::vector<std::vector<string>> setsx;
-	std::vector<std::vector<string>> setsy;
-	std::vector<std::vector<string>> setsz;
+	std::vector<std::vector<int>> setid;
+	std::vector<std::vector<int>> setspid;
+	std::vector<std::vector<double>> setsx;
+	std::vector<std::vector<double>> setsy;
+	std::vector<std::vector<double>> setsz;
 	  
 	//暂时储存的位置 一维向量
-	std::vector<string> getid;
-	std::vector<string> getspid;
-	std::vector<string> getsx;
-	std::vector<string> getsy;
-	std::vector<string> getsz;
+	std::vector<int> getid;
+	std::vector<int> getspid;
+	std::vector<double> getsx;
+	std::vector<double> getsy;
+	std::vector<double> getsz;
 
+	//设计的函数
+	void f_setid(int num, string line)
+	{
+		line = line.substr(num);
+		std::istringstream iss(line);
+		while (!iss.eof())
+		{
+			string a;
+			iss >> a;
+			const char* p = a.data();
+			int b;
+			b = atoi(p);
+			getid.push_back(b);
+		}
+	}
+
+	void f_setspid(int num, string line)
+	{
+		line = line.substr(num);
+		std::istringstream iss(line);
+		while (!iss.eof())
+		{
+			string a;
+			iss >> a;
+			const char* p = a.data();
+			int b;
+			b = atoi(p);
+			getspid.push_back(b);
+		}
+	}
+
+	void f_setsx(int num, string line)
+	{
+		line = line.substr(num);
+		std::istringstream iss(line);
+		while (!iss.eof())
+		{
+			string a;
+			iss >> a;
+			const char* p = a.data();
+			double b;
+			b = atof(p);
+			getsx.push_back(b);
+		}
+	}
+
+	void f_setsy(int num, string line)
+	{
+		line = line.substr(num);
+		std::istringstream iss(line);
+		while (!iss.eof())
+		{
+			string a;
+			iss >> a;
+			const char* p = a.data();
+			double b;
+			b = atof(p);
+			getsy.push_back(b);
+		}
+	}
+
+	void f_setsz(int num, string line)
+	{
+		line = line.substr(num);
+		std::istringstream iss(line);
+		while (!iss.eof())
+		{
+			string a;
+			iss >> a;
+			const char* p = a.data();
+			double b;
+			b = atof(p);
+			getsz.push_back(b);
+		}
+	}
+};
 
 	/*int getid(int id)
 	{
@@ -67,7 +142,7 @@ private:
 	
 
 	
-};
+
 
 
 
