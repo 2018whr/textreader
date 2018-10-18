@@ -44,4 +44,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="DesSection.xml">
+      <Filter>源文件</Filter>
+    </Xml>
+  </ItemGroup>
 </Project>

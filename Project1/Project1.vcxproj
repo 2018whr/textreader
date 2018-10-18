@@ -23,6 +23,9 @@
     <ClInclude Include="pugixml\pugiconfig.hpp" />
     <ClInclude Include="pugixml\pugixml.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="DesSection.xml" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C1F8E4DD-8E5B-4D77-8C09-96C74A8289B0}</ProjectGuid>
     <RootNamespace>Project1</RootNamespace>
